@@ -9,9 +9,9 @@ Module.php: Provides the methods needed to integrate your custom functionality w
 
 /config:
 
-  module.ini: contains basic information about the module such as name, version, author, description, link, etc.
+    module.ini: contains basic information about the module such as name, version, author, description, link, etc.
   
-  module.config.php: registers things that you need to make use of for your module.
+    module.config.php: registers things that you need to make use of for your module.
   
 /src: contains source files for the things registered in module.config.php
 
