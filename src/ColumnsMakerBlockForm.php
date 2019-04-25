@@ -1,5 +1,5 @@
 <?php
-namespace ColumnsMaker;
+namespace ColumnsMaker\Form;
 
 use Zend\Form\Element;
 use Zend\Form\Form;
@@ -37,3 +37,4 @@ class ColumnsMakerBlockForm extends Form
 			]
 		]);
 	}
+}
