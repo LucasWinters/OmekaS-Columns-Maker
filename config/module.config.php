@@ -9,7 +9,7 @@ return [
     ],
 	'form_elements' => [
         'invokables' => [
-            Form\ColumnsMakerBlockForm::class => Form\ColumnsMakerBlockForm::class,
+            Form\ColumnsBlockForm::class => Form\ColumnsBlockForm::class,
         ],
     ],
 ];

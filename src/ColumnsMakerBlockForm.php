@@ -1,10 +1,10 @@
 <?php
-namespace ColumnsMaker\Form;
+namespace ColumnsMaker;
 
 use Zend\Form\Element;
 use Zend\Form\Form;
 
-class ColumnsMakerBlockForm extends Form
+class ColumnsBlockForm extends Form
 {
 	public function init()
 	{
@@ -12,7 +12,7 @@ class ColumnsMakerBlockForm extends Form
 			'name' => 'o:block[__blockIndex__][o:data][height]',
             'type' => Element\Text::class,
             'options' => [
-                'label' => 'Column Height',
+                'label's => 'Column Height',
                 'info' => 'Please enter a number with CSS units.',
             ],
 		]);
