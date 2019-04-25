@@ -1,10 +1,10 @@
 <?php
-namespace SimpleCarousel\Form;
+namespace ColumnsMaker;
 
 use Zend\Form\Element;
 use Zend\Form\Form;
 
-class CarouselBlockForm extends Form
+class ColumnsMakerBlockForm extends Form
 {
 	public function init()
 	{
