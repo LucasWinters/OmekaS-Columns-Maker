@@ -1,5 +1,5 @@
-<?
-namespace ColumnsMaker;
+<?php
+namespace ColumnMaker;
 
 return [
     'view_manager' => [
@@ -7,11 +7,23 @@ return [
             dirname(__DIR__) . '/view',
         ],
     ],
-	'form_elements' => [
-        'invokables' => [
-            Form\ColumnsBlockForm::class => Form\ColumnsBlockForm::class,
+	'block_layouts' => [
+        'factories' => [
+            'column' => Service\BlockLayout\ColumnFactory::class,
         ],
     ],
+	'form_elements' => [
+        'invokables' => [
+            Form\ColumnBlockForm::class => Form\ColumnBlockForm::class,
+        ],
+    ],
+    'DefaultSettings' => [
+        'ColumnBlockForm' => [
+            'height' => '500px',
+            'perPage' => 1,
+            'title' => '',
+        ]
+    ]
 ];
 
     

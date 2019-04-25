@@ -1,6 +1,6 @@
 <?php
 
-namespace ColumnsMaker;
+namespace ColumnMaker;
 
 use Omeka\Module\AbstractModule;
 use Zend\EventManager\Event;
@@ -12,6 +12,6 @@ class Module extends AbstractModule
     /** Module body **/
     public function getConfig()
     {
-        return [];
+        return include __DIR__ . '/config/module.config.php';
     }
 }
