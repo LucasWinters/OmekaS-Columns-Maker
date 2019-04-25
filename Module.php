@@ -27,6 +27,5 @@ class Module extends AbstractModule
             }
         );
     }
-
-}
+};
 ?>
