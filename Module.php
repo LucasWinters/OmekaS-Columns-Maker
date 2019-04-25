@@ -1,5 +1,7 @@
 <?php
 
+namespace ColumnsMaker;
+
 use Omeka\Module\AbstractModule;
 use Zend\EventManager\Event;
 use Zend\EventManager\SharedEventManagerInterface;
