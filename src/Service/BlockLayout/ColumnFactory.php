@@ -9,10 +9,9 @@ class ColumnFactory implements FactoryInterface
 {
 	public function __invoke(ContainerInterface $services, $requestedName, array $options = null)
 	{
-		$htmlPurifier = $serviceLocator->get('Omeka\HtmlPurifier');
 		return new Column(
 			$services->get('FormElementManager'),
-	 		$services->get('Config')['DefaultSettings']['ColumnBlockForm']
+			$services->get('Config')['DefaultSettings']['ColumnBlockForm']
 		);
 	}
 }
