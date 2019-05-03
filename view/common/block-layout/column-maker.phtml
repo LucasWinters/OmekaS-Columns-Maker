@@ -1,10 +1,10 @@
 <div style="position:relative;">
 	<?php
-		$this->headLink()->appendStylesheet($this->assetUrl('css/columns.css', 'Column Maker'));
+		$this->headLink()->appendStylesheet($this->assetUrl('css/columns.css', 'ColumnMaker'));
 		?>
 
 	<?php
-	foreach ($perpages as $perpage){
+	for ($x = 1; $x <= $perPage; $x++){
 		echo "<div class='column' style='background-color: white;'>";
 		echo "<div class='unit_img_outer no_text spacing_21 border_1 first_col'>";
 		echo	"<div class='column-header'>";
