@@ -17,19 +17,35 @@ class ColumnBlockForm extends Form
             ],
 		]);
 		
+		// $this->add([
+		// 	'name' => 'o:block[__blockIndex__][o:data][perPage]',
+        //     'type' => Element\Number::class,
+        //     'options' => [
+		// 		'label' => 'Number of Columns',
+		// 		'info' => 'The number of columns to be made.'
+		// 	],
+		// 	'attributes' => [
+		// 		'min' => 1,
+        //         'max' => 5,
+		// 	]
+		// ]);
+
 		$this->add([
-			'name' => 'o:block[__blockIndex__][o:data][perPage]',
-            'type' => Element\Number::class,
+			'name' => 'o:block[__blockIndex__][o:data][colHeader]',
+			'type' => Element\Text::class,
             'options' => [
-				'label' => 'Number of Columns',
-				'info' => 'The number of columns to be made.'
-			],
-			'attributes' => [
-				'min' => 1,
-                'max' => 5,
+				'label' => 'Column Header (optional)',
 			]
 		]);
-		
+
+		$this->add([
+			'name' => 'o:block[__blockIndex__][o:data][title]',
+			'type' => Element\Text::class,
+            'options' => [
+				'label' => 'Column Title',
+			]
+		]);
+
 		$this->add([
 			'name' => 'o:block[__blockIndex__][o:data][bodyText]',
 			'type' => Element\Text::class,

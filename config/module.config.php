@@ -20,9 +20,12 @@ return [
     'DefaultSettings' => [
         'ColumnBlockForm' => [
             'height' => '500px',
-            'perPage' => 1,
+            'colHeader' => '',
+            'title' => '',
+            // 'perPage' => 1,
             'bodyText' => '',
             'imgSrc' => '',
+            'hyLink' => '',
         ]
     ]
 ];

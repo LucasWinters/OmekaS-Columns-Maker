@@ -49,7 +49,8 @@ class Column extends AbstractBlockLayout
 			: $this->defaultSettings;
 		$form->setData([
 			'o:block[__blockIndex__][o:data][height]' => $data['height'],
-			'o:block[__blockIndex__][o:data][perPage]' => $data['perPage'],
+			'o:block[__blockIndex__][o:data][colHeader]' => $data['colHeader'],
+			'o:block[__blockIndex__][o:data][title]' => $data['title'],
 			'o:block[__blockIndex__][o:data][bodyText]' => $data['bodyText'],
 			'o:block[__blockIndex__][o:data][imgSrc]' => $data['imgSrc'],
 			'o:block[__blockIndex__][o:data][hyLink]' => $data['hyLink'],
@@ -75,7 +76,8 @@ class Column extends AbstractBlockLayout
 		
 		return $view->partial('common/block-layout/column-maker', [
 			'height' => $block->dataValue('height'),
-			'perPage' => $block->dataValue('perPage'),
+			'colHeader' => $block->dataValue('colHeader'),
+			'title' => $block->dataValue('title'),
 			'bodyText' => $block->dataValue('bodyText'),
 			'imgSrc' => $block->dataValue('imgSrc'),
 			'hyLink' => $block->dataValue('hyLink')

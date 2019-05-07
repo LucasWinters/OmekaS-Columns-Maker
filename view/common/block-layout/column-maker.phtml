@@ -4,18 +4,17 @@
 		?>
 
 	<?php
-	for ($x = 1; $x <= $perPage; $x++){
-		echo "<div class='column' style='background-color: white;'>";
+		echo "<div class='column' style='background-color: white; height: $height' >";
 		echo "<div class='unit_img_outer no_text spacing_21 border_1 first_col'>";
 		echo	"<div class='column-header'>";
-		echo		"<p class='column-header-text'> GROW YOURSELF </p>";
+		echo		"<p class='column-header-text'> $colHeader </p>";
 		echo	"</div>";
 		echo	"<a class='region' href='$hyLink'>";
 		echo		"<span class='unit_img_inner'>";
 		echo			"<img alt='Night Gallery' width='280' height='224' src='$imgSrc'/>";
 		echo		"</span>";
 		echo		"<span class='column-body-title'>";
-		echo			"Individual";
+		echo			$title;
 		echo		"</span>";
 		echo		"<span class='column-body-content'>";
 		echo			 $bodyText;
@@ -24,7 +23,6 @@
 		echo	"<div class='pointer-button' id='pointer'>VIEW MORE</div>";
 		echo "</div>";
 	echo "</div>";
-	}
 	?>
 
 </div>
