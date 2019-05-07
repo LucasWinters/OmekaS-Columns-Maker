@@ -21,7 +21,8 @@ return [
         'ColumnBlockForm' => [
             'height' => '500px',
             'perPage' => 1,
-            'title' => '',
+            'bodyText' => '',
+            'imgSrc' => '',
         ]
     ]
 ];

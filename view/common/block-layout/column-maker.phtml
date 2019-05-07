@@ -1,6 +1,6 @@
 <div style="position:relative;">
 	<?php
-		$this->headLink()->appendStylesheet($this->assetUrl('css/columns.css', 'ColumnMaker'));
+		$this->headLink()->appendStylesheet($this->assetUrl('css/column.css', 'ColumnMaker'));
 		?>
 
 	<?php
@@ -10,18 +10,15 @@
 		echo	"<div class='column-header'>";
 		echo		"<p class='column-header-text'> GROW YOURSELF </p>";
 		echo	"</div>";
-		echo	"<a class='region' href='https://google.com'>";
+		echo	"<a class='region' href='$hyLink'>";
 		echo		"<span class='unit_img_inner'>";
-		echo			"<img alt='Night Gallery' width='280' height='224' src='https://www.exhibit-e.com/imgs/Screen_Shot_2018_03_13_at_5_04_14_PM0.png'/>";
+		echo			"<img alt='Night Gallery' width='280' height='224' src='$imgSrc'/>";
 		echo		"</span>";
 		echo		"<span class='column-body-title'>";
 		echo			"Individual";
 		echo		"</span>";
 		echo		"<span class='column-body-content'>";
-		echo			 "To see a World in a Grain of Sand";
-		echo				"And a Heaven in a Wild Flower,";
-		echo				"Hold Infinity in the palm of your hand";
-		echo				"And Eternity in an hour.";
+		echo			 $bodyText;
 		echo		"</span>";
 		echo	"</a>";
 		echo	"<div class='pointer-button' id='pointer'>VIEW MORE</div>";
@@ -29,7 +26,5 @@
 	echo "</div>";
 	}
 	?>
-
-	<p> Anyone there? </p>
 
 </div>
